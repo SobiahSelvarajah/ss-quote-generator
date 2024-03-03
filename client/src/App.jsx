@@ -1,9 +1,12 @@
+import React from 'react'
+import QuoteText from './components/quoteText/QuoteText'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div className="app__container">
+      <QuoteText/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
