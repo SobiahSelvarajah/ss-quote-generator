@@ -1,6 +1,19 @@
-body {
-  box-sizing: border-box;
+@use './partials/breakpoints' as *;
+@use './partials/textstyles' as *;
+@use './partials/typeface' as *;
+@use './partials/color' as *;
+
+// general styling
+*, *::before, *::after {
   margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
   min-height: 100vh;
   background-color: #dbe3e5;
   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23306a96' fill-opacity='0.18'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -10,8 +23,84 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: 'Raleway Semi Bold';
+  font-size: $h1_text_size_m;
+  line-height: $h1_line_height_m;
+  @include tablet {
+      font-size: $h1_text_size_dt;
+      line-height: $h1_line_height_dt;
+  }
+}
+h2 {
+  font-family: 'Raleway Regular Italic';
+  font-size: $h2_text_size_m;
+  line-height: $h2_line_height_m;
+  padding: 3rem 0 2rem 1rem;
+  @include tablet {
+      font-size: $h2_text_size_dt;
+      line-height: $h2_line_height_dt;
+      padding: 4rem 0 3rem 3rem;
+  }
+  @include desktop {
+      padding-top: 5rem;
+  }  
+}
+h3 {
+  font-family: 'Raleway Medium';
+  font-size: $h3_text_size_m;
+  line-height: $h3_line_height_m;
+  padding: 3rem 0 1rem 0;
+  @include tablet {
+      font-size: $h3_text_size_dt;
+      line-height: $h3_line_height_dt;
+      padding: 0 0 1rem 0;
+  }
+}
+h4 {
+  font-family: 'Raleway Regular';
+  font-size: $h4_text_size_m;
+  line-height: $h4_line_height_m;
+  @include tablet {
+      font-size: $h4_text_size_dt;
+      line-height: $h4_line_height_dt;
+  }
+}
+h5 {
+  font-family: 'Raleway Medium Italic';
+  font-size: $h5_text_size_m;
+  line-height: $h5_line_height_m;
+  padding-bottom: .5rem;
+  @include desktop {
+      font-size: $h5_text_size_dt;
+      line-height: $h5_line_height_dt;
+  }
+}
+h6 {
+  font-family: 'Raleway Bold';
+  font-size: $h6_text_size_m;
+  line-height: $h6_line_height_m;
+  @include tablet {
+      font-size: $h6_text_size_dt;
+      line-height: $h6_line_height_dt;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+button {
+  font-family: 'Raleway Bold';
+  font-size: $h5_text_size_m;
+  line-height: $h5_line_height_m;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  @include tablet {
+      font-size: $h5_text_size_m;
+      line-height: $h5_line_height_dt;
+  }
+  @include desktop {
+      padding: 1rem 1.5rem;
+  }
 }
