@@ -2,6 +2,7 @@ import React from 'react';
 import QuoteText from '../quoteText/QuoteText';
 import QuoteAuthor from '../quoteAuthor/QuoteAuthor';
 import TwitterButton from '../twitterButton/TwitterButton';
+import NewQuoteButton from '../newQuoteButton/NewQuoteButton';
 
 const QuoteContainer = () => {
   return (
@@ -9,6 +10,7 @@ const QuoteContainer = () => {
       <QuoteText/>
       <QuoteAuthor/>
       <TwitterButton/>
+      <NewQuoteButton/>
     </section>
   )
 }
