@@ -1,10 +1,14 @@
 import React from 'react'
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
 
 const QuoteText = () => {
   return (
-    <h5 className="quoteText__text">
+    <h2 className="quoteText__text">
+      <RiDoubleQuotesL/>
         Peace begins with a smile.
-    </h5>
+      <RiDoubleQuotesR/>
+    </h2>    
   )
 }
 

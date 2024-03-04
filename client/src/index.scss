@@ -36,25 +36,18 @@ h2 {
   font-family: 'Raleway Regular Italic';
   font-size: $h2_text_size_m;
   line-height: $h2_line_height_m;
-  padding: 3rem 0 2rem 1rem;
   @include tablet {
-      font-size: $h2_text_size_dt;
-      line-height: $h2_line_height_dt;
-      padding: 4rem 0 3rem 3rem;
-  }
-  @include desktop {
-      padding-top: 5rem;
-  }  
+    font-size: $h2_text_size_dt;
+    line-height: $h2_line_height_dt;
+  } 
 }
 h3 {
   font-family: 'Raleway Medium';
   font-size: $h3_text_size_m;
   line-height: $h3_line_height_m;
-  padding: 3rem 0 1rem 0;
   @include tablet {
-      font-size: $h3_text_size_dt;
-      line-height: $h3_line_height_dt;
-      padding: 0 0 1rem 0;
+    font-size: $h3_text_size_dt;
+    line-height: $h3_line_height_dt;
   }
 }
 h4 {
@@ -70,7 +63,6 @@ h5 {
   font-family: 'Raleway Medium Italic';
   font-size: $h5_text_size_m;
   line-height: $h5_line_height_m;
-  padding-bottom: .5rem;
   @include desktop {
       font-size: $h5_text_size_dt;
       line-height: $h5_line_height_dt;
