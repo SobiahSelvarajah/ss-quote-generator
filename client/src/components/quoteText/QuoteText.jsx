@@ -1,9 +1,8 @@
 import React from 'react'
-import './QuoteText.scss'
 
 const QuoteText = () => {
   return (
-    <h5 className="quoteText__text" id="quote">
+    <h5 className="quoteText__text">
         Peace begins with a smile.
     </h5>
   )
