@@ -2,3 +2,12 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 @use '../../partials/color' as *;
+
+.quoteAuthor {
+    &__name {
+        padding-bottom: 1rem;
+        @include tablet {
+            padding-bottom: 0.5rem;
+        }
+    }
+}

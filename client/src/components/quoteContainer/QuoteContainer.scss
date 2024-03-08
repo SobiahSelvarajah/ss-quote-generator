@@ -2,3 +2,21 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 @use '../../partials/color' as *;
+
+.quoteContainer {
+    &__container {
+        margin: 3rem;
+        padding: 2rem;
+        width: auto;
+        max-width: 56rem;
+        border-radius: 10px;
+        background-color: rgba(235, 240, 240, 0.6);
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+        @include tablet {
+            margin: 2rem 8rem;
+        }
+        @include desktop {
+            padding: 3rem;
+        }
+    }
+}

@@ -24,7 +24,7 @@ body {
   justify-content: center;
 }
 h1 {
-  font-family: 'Raleway Semi Bold';
+  font-family: 'Raleway SemiBold';
   font-size: $h1_text_size_m;
   line-height: $h1_line_height_m;
   @include tablet {
@@ -33,7 +33,7 @@ h1 {
   }
 }
 h2 {
-  font-family: 'Raleway Regular Italic';
+  font-family: 'Raleway Regular';
   font-size: $h2_text_size_m;
   line-height: $h2_line_height_m;
   @include tablet {
