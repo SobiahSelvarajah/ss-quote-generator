@@ -86,8 +86,13 @@ button {
   font-family: 'Raleway Bold';
   font-size: $h5_text_size_m;
   line-height: $h5_line_height_m;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
+  padding:  1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.4rem 0rem rgba(121, 121, 121, 0.66);
+  cursor: pointer;
+  color: $white;
+  background-color: $rhythmic_blue;
+
   @include tablet {
       font-size: $h5_text_size_m;
       line-height: $h5_line_height_dt;
@@ -95,4 +100,12 @@ button {
   @include desktop {
       padding: 1rem 1.5rem;
   }
+}
+button:hover {
+  color: $purple_navy;
+  background-color: $white;
+}
+button:active {
+  transform: translate(0, 0.4rem);
+  box-shadow: 0 0.4rem 0.4rem 0rem rgba(255, 255, 255, 0.5);
 }
